@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Linzi Jiang</title>
-		<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="../wood_1fab5.png" />
-    <link rel="stylesheet" href ="spark.css"/>
-  </head>
-  <body>
-    <img class="spark" src="../image/dituhei_画板 1.png" alt="Spark">
-    <div class="sparkpicture">
-      <div class="grid"></div> 
-      <img src="../image/1.jpg" alt="Sparkimage1">
-      <img src="../image/2.jpg" alt="Sparkimage2">
-      <img src="../image/3.jpg" alt="Sparkimage3">
-      <img src="../image/4.jpg" alt="Sparkimage4">
-    </div>
-    <div>      
-      <button class="zuopinming">
-      <img src="../image/SVG/zuopinming.svg" alt="Zuopinming">
-      <span>Spark</span>
-    </button></div>
+    <link rel="stylesheet" href="spark.css">
+</head>
 
-  </body>
+<body>
+    <img class="sparkpicture"src="../image/1.jpg" alt="Sparkimages1">
+    <img class="sparkpicture"src="../image/2.jpg" alt="Sparkimages2">
+    <img class="sparkpicture"src="../image/3.jpg" alt="Sparkimages3">
+    <img class="sparkpicture"src="../image/4.jpg" alt="Sparkimages4">
+    <div class="mask" id="mask" style="display:none">
+        <p>    钱币上包含或隐含的各种文化知识包罗万象，其图案都是经过精心挑选以及著名的艺术家精心设计的。有些是国家的著名建筑、特殊的植物以及对国家发展做出贡献的人物，都有深刻的政治意义和历史背景，但是随着移动支付的发展，我们越来越少的使用纸币，那这些有重要意义的图案是否也正在被人类抛弃?
+</p>
+    </div>
+    <img class="spark" src="../image/dituhei_画板 1.png" alt="Spark">
+    <div class="desc" id="desc">
+        项目介绍
+    </div>
+    <div class="ming" id="ming">
+      Spark
+  </div>
+  <div class="fanhui" id="fanhui">
+    <img src="../image/fanhui.png" href="../index.html" alt="Sparkimages1">
+</div>
+    
+</body>
 </html>
+
+<script>
+
+var mask = document.getElementById("mask")
+var desc = document.getElementById("desc")
+
+  desc.onmouseover = function () {
+    mask.style.display = "flex";
+};
+
+desc.onmouseout = function () {
+    mask.style.display = "none";
+};
+</script>
