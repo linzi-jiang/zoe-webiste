@@ -6,11 +6,18 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <link rel="icon" href="wood_1fab5.png" />
   <link rel="stylesheet" href="shouye.css" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="jquery.rwdImageMaps.min.js"></script>
+  <script>
+    $(document).ready(function(e) {
+      $('img[usemap]').rwdImageMaps();
+    });
+  </script>
 </head>
 <body>
   <img src="image/最新封面_画板 1_画板 1.png" usemap="#fengmian">
   <map name="fengmian">
-    <area alt="spark" title="spark" href="spark/spark.html" coords="6022,1683,5421,2333,5697,2714,5273,3270,5810,3446,5789,4280,6199,4273,6163,3453,6856,3340,6382,2789,6658,2683,6503,2203" shape="poly"
+    <area alt="Spark" title="spark" href="spark/spark.html" coords="6022,1683,5421,2333,5697,2714,5273,3270,5810,3446,5789,4280,6199,4273,6163,3453,6856,3340,6382,2789,6658,2683,6503,2203" shape="poly"
       onmouseover="document.getElementById('image-spark').style.display = 'block';"
       onmouseout="document.getElementById('image-spark').style.display = 'none';">
   </map>
