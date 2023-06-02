@@ -22,7 +22,7 @@ body {
     height: auto;
     overflow-y: scroll;
     margin: 0 auto; /* 水平居中 */
-    margin-top: 20px;
+    margin-bottom: 20px;
 
   }
   img:first-child {
@@ -43,7 +43,7 @@ body {
         width: 100%;
         height: 50px;
         color: #000000;
-        font-size: 16px;
+        font-size: 0.8em;
         border: none;
         border-radius: 5px;
         cursor: pointer;
@@ -69,8 +69,8 @@ body {
     color: #fff;
 }
 .mask p {
-  width: 650px;
-  height: 140px;
+  max-width: 90%;
+  height: 20%;
   background: url("../image/1x/资源2.png") no-repeat;
   background-size: 100% 100%;
   position: fixed;
@@ -82,7 +82,7 @@ body {
   flex-direction: column;
   justify-content: center;
   line-height: 20px;
-  font-size: 14px;
+  font-size: 0.9vw;
   cursor: pointer;
   color: #ffffff;
   font-family: sans-serif;
@@ -94,15 +94,15 @@ body {
 }
 
 .desc {
-    width: 120px;
-    height: 40px;
+    width: 8%;
+    height: 6%;
     background: url("../image/desc.png") no-repeat;
     position: fixed;
     right: 30px;
     top: 50%;
     text-align: center;
-    line-height: 40px;
-    font-size: 21px;
+    line-height: 45px;
+    font-size:  1.4vw;
     background-size: 100% 100%;
     cursor: pointer;
     color: #000000;
@@ -111,18 +111,18 @@ body {
 }
 
 .ming {
-  width: 100px;
-  height: 40px;
+  width: 8%;
+  height: 6%;
   background: url("../image/ming.png") no-repeat;
   position: fixed;
   left: 0px;
   top: 60px;
   text-align: center;
-  line-height: 40px;
-  font-size: 21px;
+  line-height: 45px;
+  font-size: 1.5vw;
   background-size: 100% 100%;
   color: #070000;
-  transform: translateX(170px);
+  transform: translateX(140%);
   font-family: sans-serif;
 }
 .fanhui img{
@@ -133,6 +133,6 @@ body {
   bottom: 20px;
   background-size: 100% 100%;
   color: #000000;
-  transform: translateX(80px);
+  transform: translateX(120%);
   font-family: sans-serif;
 }
