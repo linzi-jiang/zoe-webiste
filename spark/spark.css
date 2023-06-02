@@ -98,15 +98,15 @@ body {
     height: 6%;
     background: url("../image/desc.png") no-repeat;
     position: fixed;
-    right: 30px;
+    right: 2%;
     top: 50%;
     text-align: center;
-    line-height: 45px;
+    line-height: 3vw;
     font-size:  1.4vw;
     background-size: 100% 100%;
     cursor: pointer;
     color: #000000;
-    transform: translateX(-25px);
+    transform: translateX(-25%);
     font-family: sans-serif;
 }
 
@@ -116,9 +116,9 @@ body {
   background: url("../image/ming.png") no-repeat;
   position: fixed;
   left: 0px;
-  top: 60px;
+  top: 10%;
   text-align: center;
-  line-height: 45px;
+  line-height: 3vw;
   font-size: 1.5vw;
   background-size: 100% 100%;
   color: #070000;
