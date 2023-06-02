@@ -10,10 +10,92 @@ body {
     display: none;
   }
 
-  #hover-spark {
+#hover-spark {
+    display: block;
+    
+  }
+#image-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+#hover-photo {
     display: block;
   }
-  img {
+#image-boom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+#hover-boom {
+    display: block;
+  }
+#image-fever {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+#hover-fever {
+    display: block;
+  }
+#image-music {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+#hover-music {
+    display: block;
+  }
+
+#image-pet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+#hover-pet {
+    display: block;
+  }
+#image-red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+#hover-red {
+    display: block;
+  }
+#image-simi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+#hover-simi {
+    display: block;
+  }
+  #image-site {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+#hover-site {
+    display: block;
+  }
+img {
     position: fixed;
     top: 0;
     left: 0;
@@ -21,7 +103,7 @@ body {
     height: 100%;
     z-index: -1;
   }
-  div.mapping {
+div.mapping {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -31,4 +113,22 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+  }
+  #hover-hello {
+    display: block;
+  }
+  #image-hello {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  #hover-tel {
+    display: block;
+  }
+  #image-tel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
   }

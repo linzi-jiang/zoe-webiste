@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Linzi Jiang</title>
-		<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="../wood_1fab5.png" />
-    <link rel="stylesheet" href ="shouye.css"/>
-  </head>
-  <body>
-   <p>spark2</p>
-  </body>
+    <link rel="stylesheet" href="photo.css">
+</head>
+
+<body>
+    <img class="photopicture"src="../image/photo1.jpg" alt="photoimage1">
+    <img class="photopicture"src="../image/photo2.jpg" alt="photoimage2">
+    <img class="photopicture"src="../image/photo4.jpg" alt="photoimage4">
+    <img class="photopicture"src="../image/photo5.jpg" alt="photoimage5">
+    <img class="photopicture"src="../image/photo6.jpg" alt="photoimage6">
+    <img class="photopicture"src="../image/photo7.jpg" alt="photoimage7">
+    <img class="photopicture"src="../image/photo8.jpg" alt="photoimage8">
+    <img class="photopicture"src="../image/photo9.jpg" alt="photoimage9">
+    <img class="photopicture"src="../image/photo10.jpg" alt="photoimage10">
+    <img class="photopicture"src="../image/photo11.jpg" alt="photoimage11">
+    <div class="mask" id="mask" style="display:none">
+        <p>    钱币上包含或隐含的各种文化知识包罗万象,其图案都是经过精心挑选以及著名的艺术家精心设计的，都有深刻的政治意义和历史背景，但是随着移动支付的发展，我们越来越少的使用纸币，那这些有重要意义的图案是否也正在被人类抛弃? 作者以一名亚洲男孩为线索，用家庭相册的形式开启了一个“家庭故事”的叙述。
+          
+</p>
+    </div>
+    <img class="photo" src="../image/dituhei_画板 1.png" alt="photo ">
+    <div class="desc" id="desc">
+        项目介绍
+    </div>
+    <div class="ming" id="ming">
+      家庭相册
+  </div>
+  <div class="fanhui" id="fanhui">
+    <a href="../index.html">
+      <img src="../image/fanhui.png" alt="返回">
+    </a>
+  </div>
+    
+</body>
 </html>
+
+<script>
+
+var mask = document.getElementById("mask")
+var desc = document.getElementById("desc")
+
+  desc.onmouseover = function () {
+    mask.style.display = "flex";
+};
+
+desc.onmouseout = function () {
+    mask.style.display = "none";
+};
+</script>
