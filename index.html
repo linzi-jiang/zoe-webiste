@@ -13,6 +13,11 @@
       $('img[usemap]').rwdImageMaps();
     });
   </script>
+  <script>
+    function sendEmail() {
+      window.location.href = "mailto:jlz526@163.com";
+    }
+  </script>
 </head>
 <body>
   <img src="image/最新封面_画板 1.jpg" usemap="#fengmian">
@@ -47,9 +52,12 @@
       <area target="" alt="hello" title="hello" href="" coords="2903,4286,2754,4102,2775,3678,2655,3848,2599,4088,2549,3911,2401,4109,2281,3947,2252,4258,2514,4286" shape="poly"
       onmouseover="document.getElementById('image-hello').style.display = 'block';"
       onmouseout="document.getElementById('image-hello').style.display = 'none';">
-      <area target="" alt="tel" title="tel" href="" coords="5193,3600,5214,3798,5179,3975,5391,4024,5617,3954,5553,3763,5588,3650,5454,3749,5362,3826,5306,3650" shape="poly"
-      onmouseover="document.getElementById('image-tel').style.display = 'block';"
-      onmouseout="document.getElementById('image-tel').style.display = 'none';">
+      <area target="" alt="email" title="email" href="" coords="5193,3600,5214,3798,5179,3975,5391,4024,5617,3954,5553,3763,5588,3650,5454,3749,5362,3826,5306,3650" shape="poly"
+      onmouseover="document.getElementById('image-email').style.display = 'block';"
+      onmouseout="document.getElementById('image-email').style.display = 'none';">
+      <area target="" alt="ewm" title="ewm" href="ewm" coords="839,3560,1022,3694,1086,3871,1241,3899,1319,3871,1390,3722,1475,3624,1312,3659,1319,3496,1355,3376,1206,3546,1171,3659,1079,3553" shape="poly"
+      onmouseover="document.getElementById('image-ewm').style.display = 'block';"
+      onmouseout="document.getElementById('image-ewm').style.display = 'none';">
   </map>
   <div id="image-spark">
     <a href="spark/spark.html">
@@ -100,10 +108,15 @@
         <img id="hover-hello" src="image/hello_画板 1.png" alt="Hover hello">
       </a>
     </div>
-    <div id="image-tel">
-      <img id="hover-tel" src="image/tel_画板 1.png" alt="Hover tel">
+  <div id="image-email">
+    <a href="javascript:void(0);" onclick="sendEmail();">
+      <img id="hover-email" src="image/email_画板 1.png" alt="Hover email_画板">
     </a>
   </div>
+  <div id="image-ewm">
+    <img id="hover-ewm" src="image/WeChat_画板 1.png" alt="Hover ewm_画板">
+  </a>
+</div>
   </div>
 </body>
 </html>

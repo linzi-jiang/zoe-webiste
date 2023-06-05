@@ -2,9 +2,9 @@
 body {
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
+    cursor: url("../image/鼠标icon-04.ico"), auto;
   }
-  
+
 .spark {
     position: fixed;
     top: 0;
@@ -21,7 +21,7 @@ body {
     width: 70%;
     height: auto;
     overflow-y: scroll;
-    margin: 0 auto; /* 水平居中 */
+    margin: 0 auto; 
     margin-bottom: 20px;
 
   }
@@ -46,7 +46,7 @@ body {
         font-size: 0.8em;
         border: none;
         border-radius: 5px;
-        cursor: pointer;
+        cursor: url("../image/鼠标icon-04.ico"), auto;
         width: auto; 
         height: auto;
       }
@@ -81,9 +81,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 20px;
+  line-height: 30px;
   font-size: 0.9vw;
-  cursor: pointer;
+  cursor: url("../image/鼠标icon-02.ico"), auto;
   color: #ffffff;
   font-family: sans-serif;
   padding-left: 80px; 
@@ -104,7 +104,7 @@ body {
     line-height: 3vw;
     font-size:  1.4vw;
     background-size: 100% 100%;
-    cursor: pointer;
+    cursor: url("../image/鼠标icon-02.ico"), auto;
     color: #000000;
     transform: translateX(-25%);
     font-family: sans-serif;
@@ -126,8 +126,8 @@ body {
   font-family: sans-serif;
 }
 .fanhui img{
-  width: 60px;
-  height: 35px;
+  width: 5%;
+  height: 6%;
   position: fixed;
   left: 0px;
   bottom: 20px;
@@ -135,4 +135,5 @@ body {
   color: #000000;
   transform: translateX(120%);
   font-family: sans-serif;
+  cursor: url("../image/鼠标icon-02.ico"), auto;
 }

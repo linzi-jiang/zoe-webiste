@@ -2,7 +2,12 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  cursor: url("image/鼠标icon-04.ico"), auto;
 }
+area {
+  cursor: url("image/鼠标icon-02.ico"), auto;
+}
+
 #image-spark {
     position: absolute;
     top: 0;
@@ -123,12 +128,22 @@ div.mapping {
     left: 0;
     display: none;
   }
-  #hover-tel {
+  #hover-email {
     display: block;
   }
-  #image-tel {
+  #image-email {
     position: absolute;
     top: 0;
     left: 0;
     display: none;
   }
+  #hover-ewm {
+    display: block;
+  }
+  #image-ewm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
