@@ -12,37 +12,38 @@
     $(document).ready(function(e) {
       $('img[usemap]').rwdImageMaps();
     });
-  </script>
-  <script>
-    // 监听touchstart事件
-    function handleTouchStart(element) {
-      // 如果长按状态为false，则执行长按触发函数
-      if (!isPressing) {
-        // 使用setTimeout延迟执行触发函数，可以根据需要调整延迟时间
-        setTimeout(function() {
-          longPressStart(element);
-        }, 500); // 延迟时间为500毫秒，您可以根据需要进行调整
-      }
+
+    var isPressing = false;
+    var longPressTimeout;
+
+    function longPressStart(element) {
+      isPressing = true;
+      element.style.display = 'block';
     }
-  
-    // 监听touchend事件
+
+    function longPressEnd(element) {
+      clearTimeout(longPressTimeout);
+      isPressing = false;
+      element.style.display = 'none';
+    }
+
+    function handleTouchStart(element) {
+      longPressTimeout = setTimeout(function() {
+        longPressStart(element);
+      }, 500);
+    }
+
     function handleTouchEnd(element) {
-      // 如果长按状态为true，则执行长按释放函数
       if (isPressing) {
         longPressEnd(element);
       }
     }
-  
-    // 初始化页面加载时的状态
+
     $(document).ready(function() {
-      // 获取悬停元素的引用
       var hoverElement = document.getElementById('image-spark');
-      // 获取长按元素的引用
       var longPressElement = document.getElementById('long-press-spark');
-      // 设置悬停元素的初始状态为隐藏
       hoverElement.style.display = 'none';
-  
-      // 监听touchstart和touchend事件
+
       hoverElement.addEventListener('touchstart', function() {
         handleTouchStart(longPressElement);
       });
@@ -51,19 +52,17 @@
       });
     });
   </script>
-  
+
   <style>
-    /* 长按效果的样式 */
     .long-press-effect {
       display: none;
     }
-  
-    /* 在最大宽度为768px的屏幕上显示长按效果 */
+
     @media screen and (max-width: 768px) {
       .click-effect {
         display: none;
       }
-  
+
       .long-press-effect {
         display: block;
       }
@@ -90,8 +89,8 @@
       onmouseover="document.getElementById('image-site').style.display = 'block';"
       onmouseout="document.getElementById('image-site').style.display = 'none';">
       <area target="" alt="fever" title="fever" href="fever" coords="719,3639,719,3180,457,3060,224,2530,337,1837,874,1067,1284,1738,1454,2233,1376,2883,1199,3116,1001,3215,1023,3646" shape="poly"
-      ontouchstart="handleTouchStart(document.getElementById('long-press-spark'));"
-      ontouchend="handleTouchEnd(document.getElementById('long-press-spark'));" 
+          ontouchstart="handleTouchStart(document.getElementById('long-press-spark'));"
+    ontouchend="handleTouchEnd(document.getElementById('long-press-spark'));" 
       onmouseover="document.getElementById('image-fever').style.display = 'block';"
       onmouseout="document.getElementById('image-fever').style.display = 'none';">
       <area target="" alt="red" title="red" href="red" coords="1256,459,1503,297,1786,304,1969,530,2217,565,2323,692,2309,883,2245,1046,2351,1244,2266,1498,2125,1540,1906,1653,1800,1639,1828,2212,1531,2212,1524,1646,1291,1675,888,1010,1058,834,980,643,1121,516" shape="poly"
