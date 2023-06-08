@@ -69,25 +69,25 @@ body {
 }
 
 .desc {
-    width: 8%;
-    height: 6%;
-    background: url("../image/desc.png") no-repeat;
-    position: fixed;
-    right: 2%;
-    top: 50%;
-    text-align: center;
-    line-height: 3vw;
-    font-size:  1.4vw;
-    background-size: 100% 100%;
-    cursor: url("../image/鼠标icon-02.ico"), auto;
-    color: #000000;
-    transform: translateX(-25%);
-    font-family: sans-serif;
+  width: 8%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  background: url("../image/desc.png") no-repeat;
+  background-size: 100% 100%;
+  line-height: 3vw;
+  font-size: 1.5vw;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  right: 4%;
+  transform: translateY(-50%);
 }
 
 .ming {
   width: 8%;
-  height: 6%;
+  height: auto;
   background: url("../image/ming.png") no-repeat;
   position: fixed;
   left: 0px;
@@ -97,12 +97,12 @@ body {
   font-size: 1.5vw;
   background-size: 100% 100%;
   color: #070000;
-  transform: translateX(140%);
+  transform: translateX(130%);
   font-family: sans-serif;
 }
 .fanhui img{
   width: 5%;
-  height: 6%;
+  height: auto;
   position: fixed;
   left: 0px;
   bottom: 20px;
