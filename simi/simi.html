@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Linzi Jiang</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="../wood_1fab5.png" />
+    <link rel="stylesheet" href="simi.css">
+</head>
+
+<body>
+  <iframe class="shipin"  src="https://www.youtube.com/embed/ZfEe4w7XLHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <img class="zhoubianpicture" src="../image/03.JPG" alt="zhoubian3">
+    <img class="zhoubianpicture" src="../image/02.JPG" alt="zhoubian2">
+    <img class="zhoubianpicture" src="../image/04.JPG" alt="zhoubian3">
+    <img class="zhoubianpicture" src="../image/05.jpg" alt="zhoubian5">
+    <img class="zhoubianpicture" src="../image/06.jpg" alt="zhoubian6">
+    <img class="zhoubianpicture" src="../image/07.jpg" alt="zhoubian7">
+    <img class="zhoubianpicture" src="../image/09.jpg" alt="zhoubian9">
+    <img class="zhoubianpicture" src="../image/10.jpg" alt="zhoubian10">
+    <div class="mask" id="mask" style="display:none">
+        <p>处理垃圾的工具正在变得多种多样，在信息发达的今天，诞生了碎纸机，保密印章、热敏纸涂改液等一系列为保护隐私而发明的处理垃圾的工具，这些工具的诞生都在诉说着“你的垃圾里藏着你的隐私”。我们运用马赛克作为传达隐私的载体，通过将采集到的图片主人公的垃圾覆盖在马赛克上这一形式，使得马赛克后的人物形象暴露给了所有的观展者。观众可以透过垃圾发现马赛克背后的隐私。启发观众重新思考和对待垃圾中的隐私。
+          </p>
+    </div>
+    <img class="zhoubian" src="../image/dituhei_画板 1.png" alt="zhoubian">
+    <div class="desc" id="desc">
+        项目介绍
+    </div>
+    <div class="ming" id="ming">
+        裸露
+    </div>
+    <div class="kuang" id="kuang" onclick="navigateToZhoubianPicture()">
+        空间
+    </div>
+    <div class="kuang1" id="kuang1" onclick="navigateToShipin()">
+        视频
+    </div>
+    <div class="fanhui" id="fanhui">
+        <a href="../index.html">
+            <img src="../image/fanhui.png" alt="返回">
+        </a>
+    </div>
+
+    <script>
+        var mask = document.getElementById("mask");
+        var desc = document.getElementById("desc");
+
+        desc.onmouseover = function () {
+            mask.style.display = "flex";
+        };
+
+        desc.onmouseout = function () {
+            mask.style.display = "none";
+        };
+
+        function navigateToZhoubianPicture() {
+            var zhoubianPictures = document.getElementsByClassName("zhoubianpicture");
+            if (zhoubianPictures.length > 0) {
+                zhoubianPictures[0].scrollIntoView();
+            }
+        }
+        function navigateToShipin() {
+            var shipin = document.getElementsByClassName("shipin");
+            if (shipin.length > 0) {
+                shipin[0].scrollIntoView();
+            }
+        }
+    </script>
+</body>
+
+</html>

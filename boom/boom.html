@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Linzi Jiang</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="../wood_1fab5.png" />
+    <link rel="stylesheet" href="boom.css">
+</head>
+
+<body>
+    <iframe class="shipin" src="https://www.youtube.com/embed/1lmFnhnlKsw" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <img class="zhoubianpicture" src="../image/zhoubian1.jpg" alt="zhoubian1">
+    <img class="zhoubianpicture" src="../image/zhoubian2.JPG" alt="zhoubian2">
+    <img class="zhoubianpicture" src="../image/zhoubian3.JPG" alt="zhoubian3">
+    <div class="mask" id="mask" style="display:none">
+        <p>《Gen-Blue Boom》是一部实验影像与逐帧动画结合的实验短片。创作者们通过一个悬疑游戏的设计，通过一个来自未来的问题——“你对adidas Originals的回忆是什么”，将不同年代的三叶草记忆聚集起来，拼接成一份献给所有人的礼物。其中包含了现实景象与未来畅想，也充斥着与三叶草有关的过往。整部作品看似正在经历、实则是在呈现永恒的精神力量：adidas Originals陪伴着几代人经历着、共渡着时光，他们带给人勇气和自由的力量，并且这些动能还将一直在未来持续下去。</p>
+    </div>
+    <img class="zhoubian" src="../image/dituhei_画板 1.png" alt="zhoubian">
+    <div class="desc" id="desc">
+        项目介绍
+    </div>
+    <div class="ming" id="ming">
+        Gen-Blue Boom
+    </div>
+    <div class="kuang" id="kuang" onclick="navigateToZhoubianPicture()">
+        周边
+    </div>
+    <div class="kuang1" id="kuang1" onclick="navigateToShipin()">
+        视频
+    </div>
+    <div class="fanhui" id="fanhui">
+        <a href="../index.html">
+            <img src="../image/fanhui.png" alt="返回">
+        </a>
+    </div>
+
+    <script>
+        var mask = document.getElementById("mask");
+        var desc = document.getElementById("desc");
+
+        desc.onmouseover = function () {
+            mask.style.display = "flex";
+        };
+
+        desc.onmouseout = function () {
+            mask.style.display = "none";
+        };
+
+        function navigateToZhoubianPicture() {
+            var zhoubianPictures = document.getElementsByClassName("zhoubianpicture");
+            if (zhoubianPictures.length > 0) {
+                zhoubianPictures[0].scrollIntoView();
+            }
+        }
+        function navigateToShipin() {
+            var shipin = document.getElementsByClassName("shipin");
+            if (shipin.length > 0) {
+                shipin[0].scrollIntoView();
+            }
+        }
+    </script>
+</body>
+
+</html>

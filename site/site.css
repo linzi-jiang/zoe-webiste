@@ -5,7 +5,7 @@ body {
   cursor: url("../image/鼠标icon-04.ico"), auto;
 }
 
-.spark {
+.site {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,7 +13,7 @@ body {
   height: 100%;
   z-index: -1;
 }
-.sparkpicture {
+.sitepicture {
   display: block;
   flex-direction: column;
   align-items: center;
@@ -23,34 +23,12 @@ body {
   overflow-y: scroll;
   margin: 0 auto; 
   margin-bottom: 20px;
-}
 
+}
 img:first-child {
   margin-top: 40px;
 }
 
-/* .zuopinming {
-      position: fixed;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 50px;
-      color: #000000;
-      font-size: 0.8em;
-      border: none;
-      border-radius: 5px;
-      cursor: url("../image/鼠标icon-04.ico"), auto;
-      width: auto; 
-      height: auto;
-    }
-    
- .zuopinming img {
-      object-fit: cover;
-      width: 100%; 
-      height: 100%; 
-    } */
 .mask {
   width: 100%;
   height: 100%;
@@ -76,38 +54,40 @@ text-align: center;
 display: flex;
 flex-direction: column;
 justify-content: center;
-line-height: 30px;
+line-height: 160%;
 font-size: 0.9vw;
+text-align: left;
+text-indent: 2em;
 cursor: url("../image/鼠标icon-02.ico"), auto;
 color: #ffffff;
 font-family: sans-serif;
-padding-left: 80px; 
-padding-right: 80px; 
-padding-top: 20px; 
-padding-bottom: 20px; 
+padding-left: 4%; 
+padding-right: 4%; 
+padding-top: 2%; 
+padding-bottom: 2%; 
 
 }
 
 .desc {
-  width: 8%;
-  height: 6%;
-  background: url("../image/desc.png") no-repeat;
-  position: fixed;
-  right: 2%;
-  top: 50%;
-  text-align: center;
-  line-height: 3vw;
-  font-size:  1.4vw;
-  background-size: 100% 100%;
-  cursor: url("../image/鼠标icon-02.ico"), auto;
-  color: #000000;
-  transform: translateX(-25%);
-  font-family: sans-serif;
+width: 8%;
+height: auto;
+display: flex;
+align-items: center;
+background: url("../image/desc.png") no-repeat;
+background-size: 100% 100%;
+line-height: 3vw;
+font-size: 1.5vw;
+justify-content: center;
+flex-direction: column;
+position: fixed;
+top: 50%;
+right: 4%;
+transform: translateY(-50%);
 }
 
 .ming {
 width: 9%;
-height: 6%;
+height: auto;
 background: url("../image/ming.png") no-repeat;
 position: fixed;
 left: 0px;
@@ -117,12 +97,12 @@ line-height: 3vw;
 font-size: 1.5vw;
 background-size: 100% 100%;
 color: #070000;
-transform: translateX(115%);
+transform: translateX(110%);
 font-family: sans-serif;
 }
 .fanhui img{
 width: 5%;
-height: 6%;
+height: auto;
 position: fixed;
 left: 0px;
 bottom: 20px;

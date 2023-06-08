@@ -83,6 +83,7 @@ body {
   top: 50%;
   right: 4%;
   transform: translateY(-50%);
+  cursor: url("../image/鼠标icon-02.ico"), auto;
 }
 
 .ming {
