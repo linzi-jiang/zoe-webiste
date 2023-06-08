@@ -9,27 +9,67 @@
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="jquery.rwdImageMaps.min.js"></script>
   <script>
-    
     $(document).ready(function(e) {
       $('img[usemap]').rwdImageMaps();
     });
   </script>
   <script>
-    function sendEmail() {
-      window.location.href = "mailto:jlz526@163.com";
+    // 监听touchstart事件
+    function handleTouchStart(element) {
+      // 如果长按状态为false，则执行长按触发函数
+      if (!isPressing) {
+        // 使用setTimeout延迟执行触发函数，可以根据需要调整延迟时间
+        setTimeout(function() {
+          longPressStart(element);
+        }, 500); // 延迟时间为500毫秒，您可以根据需要进行调整
+      }
     }
+  
+    // 监听touchend事件
+    function handleTouchEnd(element) {
+      // 如果长按状态为true，则执行长按释放函数
+      if (isPressing) {
+        longPressEnd(element);
+      }
+    }
+  
+    // 初始化页面加载时的状态
+    $(document).ready(function() {
+      // 获取悬停元素的引用
+      var hoverElement = document.getElementById('image-spark');
+      // 获取长按元素的引用
+      var longPressElement = document.getElementById('long-press-spark');
+      // 设置悬停元素的初始状态为隐藏
+      hoverElement.style.display = 'none';
+  
+      // 监听touchstart和touchend事件
+      hoverElement.addEventListener('touchstart', function() {
+        handleTouchStart(longPressElement);
+      });
+      hoverElement.addEventListener('touchend', function() {
+        handleTouchEnd(longPressElement);
+      });
+    });
   </script>
-   <style>
-    .hover-effect {
+  
+  <style>
+    /* 长按效果的样式 */
+    .long-press-effect {
       display: none;
     }
-
+  
+    /* 在最大宽度为768px的屏幕上显示长按效果 */
     @media screen and (max-width: 768px) {
-      .hover-effect {
+      .click-effect {
+        display: none;
+      }
+  
+      .long-press-effect {
         display: block;
       }
     }
   </style>
+  
 </head>
 <body>
   <img src="image/最新封面_画板 1.jpg" usemap="#fengmian">
@@ -71,14 +111,13 @@
       onmouseover="document.getElementById('image-ewm').style.display = 'block';"
       onmouseout="document.getElementById('image-ewm').style.display = 'none';">
   </map>
-  <div id="image-spark">
+  <div id="image-spark"class="click-effect">
     <a href="spark/spark.html">
       <img id="hover-spark" src="image/spark_画板 1.png" alt="Hover spark">
-      <area alt="Spark" title="spark"  coords="6022,1683,5421,2333,5697,2714,5273,3270,5810,3446,5789,4280,6199,4273,6163,3453,6856,3340,6382,2789,6658,2683,6503,2203" shape="poly"
-  ontouchstart="if (window.innerWidth <= 768) startPressTimer();" ontouchend="if (window.innerWidth <= 768) stopPressTimer();">
-
     </a>
   </div>
+  <div id="long-press-spark" class="long-press-effect">
+
   <div id="image-photo">
     <a href="photo/photo.html">
       <img id="hover-photo" src="image/photo_画板 1.png" alt="Hover photo">
@@ -123,31 +162,17 @@
         <img id="hover-hello" src="image/hello_画板 1.png" alt="Hover hello">
       </a>
     </div>
+
   <div id="image-email">
     <a href="javascript:void(0);" onclick="sendEmail();">
       <img id="hover-email" src="image/email_画板 1.png" alt="Hover email_画板">
     </a>
   </div>
+
   <div id="image-ewm">
     <img id="hover-ewm" src="image/WeChat_画板 1.png" alt="Hover ewm_画板">
   </a>
 </div>
-  </div>
-  <script>
-    var pressTimer;
 
-    function startPressTimer() {
-      pressTimer = window.setTimeout(showHoverEffect, 1000); // 设置长按的时间阈值（单位：毫秒）
-    }
-
-    function stopPressTimer() {
-      window.clearTimeout(pressTimer);
-    }
-
-    function showHoverEffect() {
-      var hoverElement = document.getElementById('image-spark');
-      hoverElement.classList.toggle('hover-effect');
-    }
-  </script>
 </body>
 </html>
