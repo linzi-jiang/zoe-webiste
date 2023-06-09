@@ -10,7 +10,6 @@ body {
     bottom: 10%;
     transform: translate(-50%, -50%);
     display: block;
-    margin: -20pt;
     width: 70vw;
     height: calc((70vw / 560) * 315); 
   }
