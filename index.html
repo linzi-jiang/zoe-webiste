@@ -8,7 +8,11 @@
   <link rel="stylesheet" href="shouye.css" />
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="jquery.rwdImageMaps.min.js"></script>
-  
+  <script>
+    $(document).ready(function(e) {
+      $('img[usemap]').rwdImageMaps();
+    });
+  </script>
 </head>
 <body>
   <img src="image/最新封面_画板 1.jpg" usemap="#fengmian">
@@ -50,12 +54,7 @@
       onmouseover="document.getElementById('image-ewm').style.display = 'block';"
       onmouseout="document.getElementById('image-ewm').style.display = 'none';">
   </map>
-  <div id="image-spark"class="click-effect">
-    <a href="spark/spark.html">
-      <img id="hover-spark" src="image/spark_画板 1.png" alt="Hover spark">
-    </a>
-  </div>
-  <div id="long-press-spark" class="long-press-effect">
+  <div id="image-spark">
     <a href="spark/spark.html">
       <img id="hover-spark" src="image/spark_画板 1.png" alt="Hover spark">
     </a>
