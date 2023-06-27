@@ -4,7 +4,21 @@ body {
     padding: 0;
     cursor: url("../image/鼠标icon-04.ico"), auto;
   }
-  iframe {
+  .video-container {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+    display: block;
+  }
+
+  .video-container video {
+    width: 70vw;
+    height: calc((70vw / 560) * 315); 
+    margin-bottom: 50px;
+  }
+  /* iframe {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -13,7 +27,7 @@ body {
     margin: 0 auto;
     width: 70vw;
     height: calc((70vw / 560) * 315); 
-  }
+  } */
 .zhoubian {
     position: fixed;
     top: 0;

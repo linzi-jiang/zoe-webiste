@@ -10,10 +10,18 @@
 </head>
 
 <body>
-    <iframe class="shipin"  src="https://www.youtube.com/embed/mgJJLlx0FX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <img class="zhoubianpicture" src="../image/book1.jpg" alt="zhoubian1">
-    <img class="zhoubianpicture" src="../image/book6.jpg" alt="zhoubian2">
-    <img class="zhoubianpicture" src="../image/book8.jpg" alt="zhoubian3">
+    <div class="video-container">
+        <video controls>
+          <source src="../image/pet.mp4" type="video/mp4">
+          您的浏览器不支持HTML5视频标签。
+        </video>
+    </div>
+    <img class="zhoubianpicture" src="../image/pet1-03.jpg" alt="zhoubian4">
+    <img class="guopicture" src="../image/pet3-02.jpg" alt="zhoubian2">
+    <img class="guopicture" src="../image/pet2-01.jpg" alt="zhoubian2">
+    <img class="guopicture" src="../image/book6.jpg" alt="zhoubian2">
+    <img class="guopicture" src="../image/book8.jpg" alt="zhoubian3">
+
     <div class="mask" id="mask" style="display:none">
         <p>通过对南龚社区居民生活的观察、调研，我们捕捉到宠物已经成为南龚社区许多家庭必不可少的成员之一，也是社区居民间的社交“触点”。我们希望以宠物为媒，消融彼此陌生感，从而激发持续性交往。因此，我们小组基于宠物秀活动，让萌宠主们秀出宠物，通过儿童手绘萌宠的形式，激发社区居民间更多的情感化交流。</p>
     </div>
@@ -24,8 +32,11 @@
     <div class="ming" id="ming">
         社区手绘萌宠秀
     </div>
-    <div class="kuang" id="kuang" onclick="navigateToZhoubianPicture()">
-        书籍
+    <div class="kuang2" id="kuang1" onclick="navigateToZhoubianPicture()">
+        海报
+    </div>
+    <div class="kuang" id="kuang" onclick="navigateToGuoPicture() ">
+        活动记录
     </div>
     <div class="kuang1" id="kuang1" onclick="navigateToShipin()">
         视频
@@ -52,6 +63,12 @@
             var zhoubianPictures = document.getElementsByClassName("zhoubianpicture");
             if (zhoubianPictures.length > 0) {
                 zhoubianPictures[0].scrollIntoView();
+            }
+        }
+        function navigateToGuoPicture() {
+            var guopicture = document.getElementsByClassName("guopicture");
+            if (guopicture.length > 0) {
+                guopicture[0].scrollIntoView();
             }
         }
         function navigateToShipin() {
