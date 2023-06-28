@@ -4,7 +4,7 @@ body {
     padding: 0;
     cursor: url("../image/鼠标icon-04.ico"), auto;
   }
-  .video-container {
+  .shipin {
     position: absolute;
     top: 35%;
     left: 50%;
@@ -13,7 +13,7 @@ body {
     display: block;
   }
 
-  .video-container video {
+  .shipin video {
     width: 70vw;
     height: calc((70vw / 560) * 315); 
     margin-bottom: 50px;
