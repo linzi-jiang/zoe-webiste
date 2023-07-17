@@ -4,7 +4,6 @@ body {
   padding: 0;
   cursor: url("../image/鼠标icon-04.ico"), auto;
 }
-
 .spark {
   position: fixed;
   top: 0;
@@ -12,6 +11,18 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+.gif {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: auto;
+  overflow-y: scroll;
+  margin: 0 auto; 
+  margin-bottom: 20px;
+
 }
 .sparkpicture {
   display: block;
